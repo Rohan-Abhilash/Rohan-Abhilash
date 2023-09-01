@@ -7,6 +7,19 @@ body{
     background: #06283d;
     font-family: "Roboto", sans-serif;
 }
+@keyframes fadeIn{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@keyframes fade-in{
+    from {
+
+    }
+}
 .container{
     box-sizing: border-box;
     position: absolute;
@@ -21,9 +34,9 @@ body{
     border: 1px solid grey;
     border-radius: 12px;
     box-shadow: 1px 1px black;
-    animation: fadeIn 1s linear;
-    height: auto;
-    
+    animation: fadeIn 1.5s linear;
+    height: 100px;
+    transition: all 1s linear;
 }
 
 
@@ -56,33 +69,37 @@ body{
     width: 200px;
     padding-left: 10%;
     margin-top: 0;
+    animation: fadeIn 1s linear;
 }
 .msg{
     text-align: center;
     color: black;
     font-size: 30px;
+    animation: fadeIn 1s linear;
 }
 .temp{
     font-size: 40px;
     text-align: center;
     color: black;
     font-weight: bolder;
+    animation: fadeIn 1s linear;
 }
 .result{
     display: flex;
     height: 80%;
     justify-content: center;
-    animation: fadeIn 1s linear;
 }
 .weatherInfo{
     background-color: aqua;
     text-align: center;
+    animation: fadeIn 1s linear;
 }
 .otherInfo{
     display: flex;
     height: auto;
     justify-content: space-between;
     gap:10px;
+    animation: fadeIn 1s linear;
 }
 .otherInfo span{
     border: 1px solid black;
@@ -92,29 +109,11 @@ body{
     text-align: center;
     padding: 10px 10px 0px;
 }
-.fade-in{
-    animation: 0.5s fadeIn forwards;
-    animation-delay: 0.5s ;
-}
-@keyframes fadeIn{
-    from{
-        opacity:0;
-    }
-    to{
-        opacity:1;
-    }
+p,h2{
+    animation: fadeIn 1s linear;
 }
 
-.animate{
-    animation: Elongate 1s forwards;
-    animation-delay:0s ;
-}
 
-@keyframes Elongate{
-    to{
-        height:50%;
-    }
-}
 
 @media screen and (max-width:350px){
     .container{
