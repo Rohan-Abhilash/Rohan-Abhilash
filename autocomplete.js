@@ -20,7 +20,7 @@ const select =(e)=>{
 }
 function align(details){
     const constant = details.map((list)=>{
-        return `<pre onclick="select(this)">${list}</pre>`;
+        return `<pre onclick="select(this)"><i class="fa-solid fa-magnifying-glass"> </i>${list}</pre>`;
     });
     results.innerHTML = `<ul>${constant.join('')}</ul>`;
    
