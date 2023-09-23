@@ -56,6 +56,8 @@ function Notfound(){
     container.style.height ="200px";
 }
 
+window.addEventListener("click",()=>{results.style.display = "none";});
+
 searchButton.addEventListener("click",getInfo);
 
 window.addEventListener('keydown',(e) =>{
